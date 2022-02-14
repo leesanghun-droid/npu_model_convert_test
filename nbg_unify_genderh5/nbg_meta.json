@@ -1,0 +1,63 @@
+{
+    "Inputs": {
+        "input_image_55": {
+            "name": "input_image",
+            "shape": [
+                1,
+                200,
+                200,
+                3
+            ],
+            "format": "nhwc",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "zero_point": [
+                    0
+                ],
+                "scale": [
+                    0.00390625
+                ]
+            }
+        }
+    },
+    "Outputs": {
+        "attach_output_lower_bound/Relu/out0_0": {
+            "name": "attach_output_lower_bound/Relu/out0",
+            "shape": [
+                1,
+                1
+            ],
+            "format": "nhwc",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "zero_point": [
+                    0
+                ],
+                "scale": [
+                    0.0032271239906549454
+                ]
+            }
+        },
+        "attach_output_upper_bound/Relu/out0_1": {
+            "name": "attach_output_upper_bound/Relu/out0",
+            "shape": [
+                1,
+                1
+            ],
+            "format": "nhwc",
+            "quantizer": "asymmetric_affine",
+            "quantize": {
+                "qtype": "u8",
+                "zero_point": [
+                    0
+                ],
+                "scale": [
+                    0.003031496424227953
+                ]
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}
